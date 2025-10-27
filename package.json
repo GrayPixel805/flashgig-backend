@@ -2,10 +2,10 @@
   "name": "flashgig-backend",
   "version": "1.0.0-alpha",
   "description": "FlashGig Backend API - Global Alpha",
-  "main": "server-simple.js",
+  "main": "server-fixed.js",
   "scripts": {
-    "start": "node server-simple.js",
-    "dev": "nodemon server-simple.js"
+    "start": "node server-fixed.js",
+    "dev": "nodemon server-fixed.js"
   },
   "dependencies": {
     "express": "^4.18.2",
