@@ -1,0 +1,30 @@
+{
+  "name": "flashgig-backend",
+  "version": "1.0.0-alpha",
+  "description": "FlashGig Backend API - Global Alpha",
+  "main": "server-prod.js",
+  "scripts": {
+    "start": "node server-prod.js",
+    "dev": "nodemon server-prod.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "flashgig",
+    "scope-builder",
+    "freelance",
+    "api"
+  ],
+  "author": "FlashGig Team",
+  "license": "MIT"
+}

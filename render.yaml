@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: flashgig-api-alpha
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+    healthCheckPath: /api/health
+    autoDeploy: true
+
+databases:
+  - name: flashgig-db
+    plan: free
+    databaseName: flashgig
+    user: flashgig_user
