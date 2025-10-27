@@ -41,14 +41,14 @@ function saveUsers() {
 
 const JWT_SECRET = process.env.JWT_SECRET || 'fallback-secret';
 
-// Health check
+// Health check - CLEAR MARKER
 app.get('/api/health', (req, res) => {
     res.json({
         success: true,
-        message: 'FlashGig API is running',
+        message: '✅ FLASHGIG API WORKING - SERVER.JS',
         users: users.length,
         timestamp: new Date().toISOString(),
-        version: 'STABLE-1.0'
+        version: 'FINAL-FIX-1.0'
     });
 });
 
@@ -189,5 +189,6 @@ app.post('/api/auth/forgot-password', async (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-    console.log(`🚀 Server running on port ${PORT}`);
+    console.log(`🚀 SERVER.JS running on port ${PORT}`);
+    console.log(`✅ Health: http://localhost:${PORT}/api/health`);
 });
